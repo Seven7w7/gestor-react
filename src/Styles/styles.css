@@ -1,0 +1,174 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: left;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.selector {
+  cursor: crosshair;
+}
+
+h1, h2 {
+  font-family: 'Times New Roman', serif;
+  color: #61dafb;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.count {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.count.pending {
+  color: #ff4040;
+}
+
+.count.completed {
+  color: #4caf50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background-color: #333;
+  color: #eaeaea;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.filter {
+  margin: 5%;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  color: #1e1e1e;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.task-list {
+  list-style: square;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  background-color: #333;
+  border: 2px solid #555;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.task:hover {
+  background-color: #444;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.task button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-left: 15px;
+  background-color: #4caf50;
+  color: #1e1e1e;
+  border-radius: 6px;
+  border: none;
+}
+
+.filter-container {
+  margin-bottom: 30px;
+}
+
+.filter-container select {
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background-color: #333;
+  color: #eaeaea;
+}
+
+.status-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.status-indicator.completed {
+  background-color: #4caf50;
+}
+
+.status-indicator.pending {
+  background-color: #f44336;
+}
